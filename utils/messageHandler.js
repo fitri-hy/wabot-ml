@@ -1,7 +1,7 @@
-const { formatMessageInfo } = require("./utils/formatMessage");
-const { saveMessageToJSON } = require("./utils/saveMessage");
-const { handleAutoReply } = require("./utils/autoReply");
-const { features } = require("./config");
+const { formatMessageInfo } = require("./formatMessage");
+const { saveMessageToJSON } = require("./saveMessage");
+const { handleAutoReply } = require("./autoReply");
+const { features } = require("../config");
 
 async function handleIncomingMessage(sock, msg) {
     if (!msg.message) return;

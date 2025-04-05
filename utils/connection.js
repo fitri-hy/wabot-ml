@@ -2,9 +2,9 @@ const makeWASocket = require("@whiskeysockets/baileys").default;
 const { useMultiFileAuthState, DisconnectReason } = require("@whiskeysockets/baileys");
 const pino = require("pino");
 const readline = require("readline");
-const { features } = require("./config");
+const { features } = require("../config");
 const { handleIncomingMessage } = require("./messageHandler");
-const { handleGroupParticipantUpdate } = require("./controllers/GroupParticipant");
+const { handleGroupParticipantUpdate } = require("../controllers/GroupParticipant");
 const fs = require("fs");
 const path = require("path");
 
